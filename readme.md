@@ -1,4 +1,4 @@
-## Olá Mundo! sou o Renatex :computer: :ringed_planet:
+## Olá Mundo! sou o Renatex :computer::ringed_planet:
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=renatex314&locale=pt-br)
 
