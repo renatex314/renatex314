@@ -1,6 +1,6 @@
 ## Olá Mundo! sou o Renatex :computer::ringed_planet:
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=renatex314&locale=pt-br)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=renatex314&locale=pt-br&langs_count=8&theme=tokyonight)
 
 ### meus contatos e projetos:<br>
 <a href="https://www.linkedin.com/in/renato-corte-328708201/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" href="#" /></a>
