@@ -8,8 +8,7 @@
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=renatex314&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=renatex314&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=renatex314&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
-
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=renatex314&hide=javascript,css,scss,html,cmake,hack,c&langs_count=6&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=renatex314&theme=monokai&no-frame=true&no-bg=true&margin-w=4)
 
