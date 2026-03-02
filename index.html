@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renato Corte — Desenvolvedor Full-Stack Pleno</title>
+  <meta name="description" content="Portfólio de Renato Corte — Desenvolvedor Full-Stack Pleno com experiência em Next.js, React, Java Spring Boot, Go e Node.js." />
+  <meta name="keywords" content="Renato Corte, Full-Stack Developer, Next.js, React, Java, Go, Node.js, Portfólio" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Renato Corte — Full-Stack Developer" />
+  <meta property="og:description" content="Desenvolvedor Full-Stack Pleno com 2+ anos de experiência em front-end moderno e back-end escalável." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>RC<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about"      class="nav-link" data-i18n="nav.about">Sobre</a></li>
+        <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experiência</a></li>
+        <li><a href="#skills"     class="nav-link" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#education"  class="nav-link" data-i18n="nav.education">Formação</a></li>
+        <li><a href="#projects"   class="nav-link" data-i18n="nav.projects">Projetos</a></li>
+        <li><a href="#contact"    class="nav-link" data-i18n="nav.contact">Contato</a></li>
+      </ul>
+
+      <!-- Language switcher -->
+      <button class="lang-switcher" id="lang-switcher" aria-label="Switch to English">
+        <i class="fas fa-globe"></i>
+        <span data-i18n="nav.langToggle">EN</span>
+      </button>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="#about"      class="mobile-nav-link" data-i18n="nav.about">Sobre</a></li>
+      <li><a href="#experience" class="mobile-nav-link" data-i18n="nav.experience">Experiência</a></li>
+      <li><a href="#skills"     class="mobile-nav-link" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="#education"  class="mobile-nav-link" data-i18n="nav.education">Formação</a></li>
+      <li><a href="#projects"   class="mobile-nav-link" data-i18n="nav.projects">Projetos</a></li>
+      <li><a href="#contact"    class="mobile-nav-link" data-i18n="nav.contact">Contato</a></li>
+      <li>
+        <button class="lang-switcher lang-switcher--mobile" id="lang-switcher-mobile" aria-label="Switch to English">
+          <i class="fas fa-globe"></i>
+          <span data-i18n="nav.langToggle">EN</span>
+        </button>
+      </li>
+      <li>
+        <a href="scripts/Currículo Desenvolvedor Full-Stack Português (1).pdf" target="_blank" class="btn btn-primary" style="display:inline-flex;margin-top:0.5rem;">
+          <i class="fas fa-download"></i> <span data-i18n="nav.downloadCv">Download CV</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <p class="hero-greeting fade-up" data-i18n="hero.greeting">Olá, eu sou</p>
+          <h1 class="hero-name fade-up delay-1">Renato Corte</h1>
+          <div class="hero-role fade-up delay-2">
+            <span class="typed-prefix">{'>'} </span>
+            <span class="typed-text" id="typed-text"></span>
+            <span class="typed-cursor">|</span>
+          </div>
+          <div class="fade-up delay-2">
+            <span class="hero-ai-badge" data-i18n-html="hero.aiBadge">
+              <i class="fas fa-robot"></i> <span data-i18n="hero.aiBadgeText">AI-Augmented Developer</span>
+            </span>
+          </div>
+          <p class="hero-lead fade-up delay-3" data-i18n-html="hero.lead">
+            Desenvolvedor Full-Stack Pleno com <strong>2+ anos</strong> de experiência em
+            <span class="text-accent">Next.js</span>, <span class="text-accent">React</span>,
+            <span class="text-accent">Java Spring Boot</span>, <span class="text-accent">Go</span> e
+            <span class="text-accent">Node.js</span>. Construindo soluções escaláveis de ponta a ponta.
+          </p>
+
+          <div class="hero-ctas fade-up delay-4">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-briefcase"></i> <span data-i18n="hero.ctaPortfolio">Ver Portfólio</span>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-paper-plane"></i> <span data-i18n="hero.ctaContact">Entrar em Contato</span>
+            </a>
+          </div>
+
+          <div class="hero-contact-chips fade-up delay-5">
+            <a href="tel:+5518997813417" class="contact-chip">
+              <i class="fas fa-phone"></i> +55 (18) 99781-3417
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual fade-up delay-3">
+          <div class="hero-avatar-wrap">
+            <div class="hero-avatar-ring ring-1"></div>
+            <div class="hero-avatar-ring ring-2"></div>
+            <div class="hero-avatar-initials">RC</div>
+          </div>
+          <div class="hero-badge badge-1"><i class="fab fa-react"></i> React</div>
+          <div class="hero-badge badge-2"><i class="fab fa-java"></i> Spring Boot</div>
+          <div class="hero-badge badge-3"><i class="fab fa-docker"></i> Docker</div>
+          <div class="hero-badge badge-4"><span class="badge-icon">Go</span></div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <span data-i18n="hero.scroll">scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// 01</span>
+          <h2 class="section-title" data-i18n="about.sectionTitle">Sobre Mim</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p class="about-lead" data-i18n-html="about.lead">
+              Sou um <strong>Desenvolvedor Full-Stack Pleno</strong> apaixonado por transformar ideias complexas em produtos digitais robustos e elegantes.
+            </p>
+            <p data-i18n-html="about.p1">
+              Atuo no desenvolvimento front-end moderno com <strong>Next.js</strong> e <strong>React</strong>, e no back-end com <strong>Java Spring Boot</strong>, <strong>Go</strong> e <strong>Node.js</strong>. Tenho experiência em ambientes de cloud (<strong>GCP</strong>), containerização com <strong>Docker</strong> e bancos de dados SQL e NoSQL.
+            </p>
+            <p data-i18n="about.p2">
+              Meu foco está na entrega de soluções completas, escaláveis e de alto desempenho — do design de arquitetura ao deploy em produção.
+            </p>
+
+            <div class="ai-callout reveal">
+              <span class="ai-callout-icon"><i class="fas fa-robot"></i></span>
+              <p data-i18n-html="about.aiCallout">
+                Utilizo <span class="text-ai"><strong>Inteligência Artificial</strong></span> como multiplicador de capacidade — do planejamento à revisão de código — para construir a próxima geração de soluções digitais com mais velocidade, qualidade e visão.
+              </p>
+            </div>
+
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">2+</span>
+                <span class="stat-label" data-i18n="about.stat1Label">Anos de Experiência</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">5</span>
+                <span class="stat-label" data-i18n="about.stat2Label">Cargos na Carreira</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">15+</span>
+                <span class="stat-label" data-i18n="about.stat3Label">Tecnologias</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card reveal delay-1">
+            <div class="contact-card">
+              <h3 class="contact-card-title" data-i18n="about.cardTitle">Informações de Contato</h3>
+              <ul class="contact-list">
+                <li>
+                  <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                  <div>
+                    <span class="contact-label" data-i18n="about.labelPhone">Telefone</span>
+                    <a href="tel:+5518997813417" class="contact-value">+55 (18) 99781-3417</a>
+                  </div>
+                </li>
+                <li>
+                  <span class="contact-icon"><i class="fab fa-linkedin"></i></span>
+                  <div>
+                    <span class="contact-label" data-i18n="about.labelLinkedIn">LinkedIn</span>
+                    <a href="https://www.linkedin.com/in/renato-corte-328708201" target="_blank" rel="noopener" class="contact-value">renato-corte</a>
+                  </div>
+                </li>
+                <li>
+                  <span class="contact-icon"><i class="fab fa-github"></i></span>
+                  <div>
+                    <span class="contact-label" data-i18n="about.labelGitHub">GitHub</span>
+                    <a href="https://github.com/renatex314" target="_blank" rel="noopener" class="contact-value">renatex314</a>
+                  </div>
+                </li>
+                <li>
+                  <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                  <div>
+                    <span class="contact-label" data-i18n="about.labelLocation">Localização</span>
+                    <span class="contact-value" data-i18n="about.location">Mogi das Cruzes, SP — Brasil</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="contact-icon"><i class="fas fa-language"></i></span>
+                  <div>
+                    <span class="contact-label" data-i18n="about.labelLanguage">Inglês</span>
+                    <span class="contact-value" data-i18n="about.languageValue">Leitura e escrita — nível profissional</span>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="card-social">
+                <a href="https://github.com/renatex314" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/renato-corte-328708201" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// 02</span>
+          <h2 class="section-title" data-i18n="experience.sectionTitle">Experiência Profissional</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline">
+
+          <!-- Job 1 -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role" data-i18n="experience.job1.role">Desenvolvedor Full-Stack Pleno</h3>
+                  <p class="timeline-company">ODEEN <span class="timeline-company-note" data-i18n="experience.job1.companyNote">(Anteriormente SWINT)</span></p>
+                </div>
+                <div class="timeline-meta">
+                  <time class="timeline-period" datetime="2025-06" data-i18n="experience.job1.period">Jun 2025 – Atual</time>
+                  <span class="timeline-badge timeline-badge--current" data-i18n="experience.job1.badge">Atual</span>
+                </div>
+              </div>
+              <p class="timeline-location"><i class="fas fa-map-pin"></i> <span data-i18n="experience.job1.location">Mogi das Cruzes, SP, Brasil</span></p>
+              <ul class="timeline-bullets" data-i18n-bullets="experience.job1.bullets">
+                <li>Manutenção e evolução de microsserviço em <strong>Go</strong>, com foco em performance e escalabilidade.</li>
+                <li>Implementação de testes unitários utilizando <strong>Jest</strong> para garantir a qualidade do código.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Go</span><span class="tag">Jest</span><span class="tag" data-i18n="experience.job1.tagMicro">Microsserviços</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Job 2 -->
+          <article class="timeline-item reveal delay-1">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role" data-i18n="experience.job2.role">Desenvolvedor Back-end Sênior</h3>
+                  <p class="timeline-company">ODEEN</p>
+                </div>
+                <div class="timeline-meta">
+                  <time class="timeline-period" datetime="2024-12" data-i18n="experience.job2.period">Dez 2024 – Mai 2025</time>
+                </div>
+              </div>
+              <p class="timeline-location"><i class="fas fa-map-pin"></i> <span data-i18n="experience.job2.location">Mogi das Cruzes, SP, Brasil</span></p>
+              <ul class="timeline-bullets" data-i18n-bullets="experience.job2.bullets">
+                <li>Processamento de dados geoespaciais com <strong>Turf.js</strong> em Node.js para funcionalidades de geoposicionamento.</li>
+                <li>Implementação de monitoramento e métricas em serviços <strong>Java Spring Boot</strong> com <strong>Prometheus</strong>.</li>
+                <li>Adoção de banco de dados NoSQL (<strong>Firebase</strong>) para otimizar o desempenho em funcionalidades específicas.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Node.js</span><span class="tag">Turf.js</span><span class="tag">Spring Boot</span><span class="tag">Prometheus</span><span class="tag">Firebase</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Job 3 -->
+          <article class="timeline-item reveal delay-2">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role" data-i18n="experience.job3.role">Desenvolvedor Back-end Pleno</h3>
+                  <p class="timeline-company">ODEEN</p>
+                </div>
+                <div class="timeline-meta">
+                  <time class="timeline-period" datetime="2024-06" data-i18n="experience.job3.period">Jun 2024 – Nov 2024</time>
+                </div>
+              </div>
+              <p class="timeline-location"><i class="fas fa-map-pin"></i> <span data-i18n="experience.job3.location">Mogi das Cruzes, SP, Brasil</span></p>
+              <ul class="timeline-bullets" data-i18n-bullets="experience.job3.bullets">
+                <li>Desenvolvimento de novos microsserviços usando <strong>Python</strong>, <strong>Node.js</strong> e <strong>Java Spring Boot</strong> desde a arquitetura até o deploy na <strong>GCP</strong>.</li>
+                <li>Transmissão de dados em tempo real utilizando <strong>WebSockets</strong>.</li>
+                <li>Otimização de imagens <strong>Docker</strong> reduzindo tamanho e tempo de build.</li>
+                <li>Integração de Proxy Reverso <strong>HAProxy</strong> para roteamento de tráfego.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Python</span><span class="tag">Node.js</span><span class="tag">Spring Boot</span><span class="tag">GCP</span><span class="tag">Docker</span><span class="tag">WebSockets</span><span class="tag">HAProxy</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Job 4 -->
+          <article class="timeline-item reveal delay-3">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role" data-i18n="experience.job4.role">Programador Júnior</h3>
+                  <p class="timeline-company">ODEEN</p>
+                </div>
+                <div class="timeline-meta">
+                  <time class="timeline-period" datetime="2023-10" data-i18n="experience.job4.period">Out 2023 – Mai 2024</time>
+                </div>
+              </div>
+              <p class="timeline-location"><i class="fas fa-map-pin"></i> <span data-i18n="experience.job4.location">Mogi das Cruzes, SP, Brasil</span></p>
+              <ul class="timeline-bullets" data-i18n-bullets="experience.job4.bullets">
+                <li>Criação de páginas e componentes customizados em <strong>React</strong>, focando em performance e UX.</li>
+                <li>Utilização de <strong>Web Workers</strong> para processamento de documentos de maneira assíncrona.</li>
+                <li>Construção de APIs com <strong>Node.js</strong> e Express, integrando com bancos <strong>MySQL</strong>.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">React</span><span class="tag">Web Workers</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MySQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Job 5 -->
+          <article class="timeline-item reveal delay-4">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role" data-i18n="experience.job5.role">Assistente de TI Júnior</h3>
+                  <p class="timeline-company">ODEEN</p>
+                </div>
+                <div class="timeline-meta">
+                  <time class="timeline-period" datetime="2023-06" data-i18n="experience.job5.period">Jun 2023 – Set 2023</time>
+                </div>
+              </div>
+              <p class="timeline-location"><i class="fas fa-map-pin"></i> <span data-i18n="experience.job5.location">Mogi das Cruzes, SP, Brasil</span></p>
+              <ul class="timeline-bullets" data-i18n-bullets="experience.job5.bullets">
+                <li>Implementação de páginas e melhorias de interface em aplicações existentes usando <strong>React</strong> e <strong>TypeScript</strong>.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">React</span><span class="tag">TypeScript</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// 03</span>
+          <h2 class="section-title" data-i18n="skills.sectionTitle">Habilidades Técnicas</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-group reveal">
+            <div class="skill-group-header">
+              <span class="skill-group-icon"><i class="fas fa-code"></i></span>
+              <h3 class="skill-group-name" data-i18n="skills.groupLanguages">Linguagens</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip skill-chip--primary" data-i18n-aria="skills.chipAriaJava"><i class="fab fa-java"></i> Java</span>
+              <span class="skill-chip skill-chip--primary" data-i18n-aria="skills.chipAriaTS"><i class="fab fa-js"></i> TypeScript</span>
+              <span class="skill-chip skill-chip--primary" data-i18n-aria="skills.chipAriaGo"><span class="chip-icon">Go</span></span>
+              <span class="skill-chip skill-chip--comfortable" data-i18n-aria="skills.chipAriaPython"><i class="fab fa-python"></i> Python</span>
+              <span class="skill-chip skill-chip--comfortable" data-i18n-aria="skills.chipAriaSQL"><span class="chip-icon">SQL</span></span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal delay-1">
+            <div class="skill-group-header">
+              <span class="skill-group-icon"><i class="fas fa-layer-group"></i></span>
+              <h3 class="skill-group-name" data-i18n="skills.groupFrontend">Front-end</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip skill-chip--primary" data-i18n-aria="skills.chipAriaNext"><span class="chip-icon">Next</span> Next.js</span>
+              <span class="skill-chip skill-chip--primary" data-i18n-aria="skills.chipAriaReact"><i class="fab fa-react"></i> React</span>
+              <span class="skill-chip skill-chip--comfortable" data-i18n-aria="skills.chipAriaTailwind"><span class="chip-icon">TW</span> TailwindCSS</span>
+              <span class="skill-chip skill-chip--comfortable" data-i18n-aria="skills.chipAriaZustand"><span class="chip-icon">Z</span> Zustand</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal delay-2">
+            <div class="skill-group-header">
+              <span class="skill-group-icon"><i class="fas fa-server"></i></span>
+              <h3 class="skill-group-name" data-i18n="skills.groupBackend">Back-end</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip skill-chip--primary" data-i18n-aria="skills.chipAriaSpring"><span class="chip-icon">SB</span> Spring Boot</span>
+              <span class="skill-chip skill-chip--primary" data-i18n-aria="skills.chipAriaExpress"><span class="chip-icon">Ex</span> Express.js</span>
+              <span class="skill-chip skill-chip--comfortable" data-i18n-aria="skills.chipAriaFastAPI"><span class="chip-icon">FA</span> FastAPI</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal delay-3">
+            <div class="skill-group-header">
+              <span class="skill-group-icon"><i class="fas fa-cloud"></i></span>
+              <h3 class="skill-group-name" data-i18n="skills.groupCloud">Cloud &amp; DevOps</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip skill-chip--primary" data-i18n-aria="skills.chipAriaDocker"><i class="fab fa-docker"></i> Docker</span>
+              <span class="skill-chip skill-chip--primary" data-i18n-aria="skills.chipAriaGit"><i class="fab fa-git-alt"></i> Git</span>
+              <span class="skill-chip skill-chip--comfortable" data-i18n-aria="skills.chipAriaGCP"><span class="chip-icon">GCP</span></span>
+              <span class="skill-chip skill-chip--comfortable" data-i18n-aria="skills.chipAriaLinux"><i class="fab fa-linux"></i> Linux</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal delay-4">
+            <div class="skill-group-header">
+              <span class="skill-group-icon"><i class="fas fa-database"></i></span>
+              <h3 class="skill-group-name" data-i18n="skills.groupDatabases">Bancos de Dados</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip skill-chip--primary" data-i18n-aria="skills.chipAriaPostgres"><span class="chip-icon">PG</span> PostgreSQL</span>
+              <span class="skill-chip skill-chip--primary" data-i18n-aria="skills.chipAriaMySQL"><span class="chip-icon">MY</span> MySQL</span>
+              <span class="skill-chip skill-chip--comfortable" data-i18n-aria="skills.chipAriaFirebase"><span class="chip-icon">FB</span> Firebase</span>
+              <span class="skill-chip skill-chip--comfortable" data-i18n-aria="skills.chipAriaMongo"><span class="chip-icon">MG</span> MongoDB</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal delay-5">
+            <div class="skill-group-header">
+              <span class="skill-group-icon" style="color: var(--ai);"><i class="fas fa-robot"></i></span>
+              <h3 class="skill-group-name" style="color: var(--ai);" data-i18n="skills.groupAI">IA & Produtividade</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip skill-chip--ai" data-i18n-aria="skills.chipAriaOpenCode"><i class="fas fa-code"></i> OpenCode</span>
+              <span class="skill-chip skill-chip--ai" data-i18n-aria="skills.chipAriaCopilot"><i class="fas fa-code"></i> GitHub Copilot</span>
+              <span class="skill-chip skill-chip--ai" data-i18n-aria="skills.chipAriaClaude"><i class="fas fa-robot"></i> Claude</span>
+              <span class="skill-chip skill-chip--ai" data-i18n-aria="skills.chipAriaAIWorkflow"><i class="fas fa-bolt"></i> <span data-i18n="skills.chipAIWorkflow">AI-Driven Workflow</span></span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="skills-legend reveal">
+          <span class="legend-item">
+            <span class="legend-dot legend-dot--primary"></span>
+            <span data-i18n="skills.legendPrimary">Principal</span>
+          </span>
+          <span class="legend-item">
+            <span class="legend-dot legend-dot--comfortable"></span>
+            <span data-i18n="skills.legendComfortable">Intermediário</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// 04</span>
+          <h2 class="section-title" data-i18n="education.sectionTitle">Formação Acadêmica</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="education-card reveal">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-content">
+            <h3 class="edu-degree" data-i18n="education.degree">Bacharelado em Ciência da Computação</h3>
+            <p class="edu-institution">Centro Universitário Braz Cubas</p>
+            <p class="edu-location"><i class="fas fa-map-pin"></i> <span data-i18n="education.location">Mogi das Cruzes, SP, Brasil</span></p>
+            <time class="edu-period" datetime="2022-02" data-i18n="education.period">Fev 2022 – Dez 2025</time>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// 05</span>
+          <h2 class="section-title" data-i18n="projects.sectionTitle">Projetos &amp; Portfólio</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <p class="section-intro reveal" data-i18n="projects.intro">
+          Explore meu trabalho diretamente no GitHub — projetos pessoais, experimentos com novas tecnologias e contribuições open-source.
+        </p>
+
+        <div class="projects-grid">
+
+          <article class="project-card reveal">
+            <div class="project-card-top">
+              <div class="project-icon"><i class="fas fa-folder-open"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/renatex314" target="_blank" rel="noopener" class="project-link" data-i18n-aria="projects.ariaGitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title" data-i18n="projects.card1Title">Microsserviços em Go</h3>
+            <p class="project-desc" data-i18n="projects.card1Desc">
+              Arquitetura de microsserviços de alta performance desenvolvida em Go, com foco em escalabilidade e observabilidade com Prometheus.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Go</span><span class="tag">Microsserviços</span><span class="tag">Prometheus</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1">
+            <div class="project-card-top">
+              <div class="project-icon"><i class="fas fa-folder-open"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/renatex314" target="_blank" rel="noopener" class="project-link" data-i18n-aria="projects.ariaGitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title" data-i18n="projects.card2Title">Plataforma Geoespacial</h3>
+            <p class="project-desc" data-i18n="projects.card2Desc">
+              Sistema de processamento e visualização de dados geoespaciais usando Turf.js e Node.js com transmissão em tempo real via WebSockets.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Node.js</span><span class="tag">Turf.js</span><span class="tag">WebSockets</span><span class="tag">GCP</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-2">
+            <div class="project-card-top">
+              <div class="project-icon"><i class="fas fa-folder-open"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/renatex314" target="_blank" rel="noopener" class="project-link" data-i18n-aria="projects.ariaGitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title" data-i18n="projects.card3Title">Frontend com Next.js &amp; React</h3>
+            <p class="project-desc" data-i18n="projects.card3Desc">
+              Aplicações front-end modernas com React e Next.js, utilizando Web Workers para processamento assíncrono e alta performance.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Next.js</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">TailwindCSS</span>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="projects-cta reveal">
+          <a href="https://github.com/renatex314" target="_blank" rel="noopener" class="btn btn-outline">
+            <i class="fab fa-github"></i> <span data-i18n="projects.cta">Ver todos os projetos no GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// 06</span>
+          <h2 class="section-title" data-i18n="contact.sectionTitle">Vamos Conversar</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <p class="section-intro reveal" data-i18n="contact.intro">
+          Estou aberto a novas oportunidades, colaborações ou apenas uma boa conversa sobre tecnologia. Entre em contato!
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="contact-methods">
+              <a href="tel:+5518997813417" class="contact-method">
+                <div class="cm-icon"><i class="fas fa-phone"></i></div>
+                <div class="cm-content">
+                  <span class="cm-label" data-i18n="contact.labelPhone">Telefone</span>
+                  <span class="cm-value">+55 (18) 99781-3417</span>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/renato-corte-328708201" target="_blank" rel="noopener" class="contact-method">
+                <div class="cm-icon"><i class="fab fa-linkedin"></i></div>
+                <div class="cm-content">
+                  <span class="cm-label" data-i18n="contact.labelLinkedIn">LinkedIn</span>
+                  <span class="cm-value">renato-corte-328708201</span>
+                </div>
+              </a>
+              <a href="https://github.com/renatex314" target="_blank" rel="noopener" class="contact-method">
+                <div class="cm-icon"><i class="fab fa-github"></i></div>
+                <div class="cm-content">
+                  <span class="cm-label" data-i18n="contact.labelGitHub">GitHub</span>
+                  <span class="cm-value">renatex314</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal delay-1" id="contact-form" novalidate>
+            <!-- Honeypot -->
+            <input type="text" name="_honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
+
+            <div class="form-group">
+              <label for="name" data-i18n="contact.formName">Nome</label>
+              <input type="text" id="name" name="name" data-i18n-placeholder="contact.formNamePH" placeholder="Seu nome completo" required />
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="contact.formEmail">Email</label>
+              <input type="email" id="email" name="email" data-i18n-placeholder="contact.formEmailPH" placeholder="seu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="contact.formMessage">Mensagem</label>
+              <textarea id="message" name="message" rows="5" data-i18n-placeholder="contact.formMessagePH" placeholder="Como posso ajudar?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> <span data-i18n="contact.formSubmit">Enviar Mensagem</span>
+            </button>
+            <p class="form-note" id="form-status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#hero" class="footer-logo">
+          <span class="logo-bracket">&lt;</span>RC<span class="logo-bracket">/&gt;</span>
+        </a>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#about"      data-i18n="footer.navAbout">Sobre</a>
+          <a href="#experience" data-i18n="footer.navExperience">Experiência</a>
+          <a href="#skills"     data-i18n="footer.navSkills">Skills</a>
+          <a href="#projects"   data-i18n="footer.navProjects">Projetos</a>
+          <a href="#contact"    data-i18n="footer.navContact">Contato</a>
+        </nav>
+
+        <div class="footer-social">
+          <a href="https://github.com/renatex314" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/renato-corte-328708201" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n-html="footer.copy">&copy; 2026 Renato Corte. Desenvolvido com <span class="text-accent">&hearts;</span>, código e <span class="text-ai">IA</span>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="translations.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
