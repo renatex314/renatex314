@@ -14,7 +14,7 @@
 
 ## About me
 
-Mid-Level Full-Stack Developer with **2+ years** of experience building scalable, end-to-end solutions — from architecture design to production deployment on **GCP**.
+Mid-Level Full-Stack Developer with **3+ years** of experience building scalable, end-to-end solutions — from architecture design to production deployment on **GCP**.
 
 I work across the full stack with **Next.js**, **React**, **Java Spring Boot**, **Go** and **Node.js**, with hands-on experience in containerisation (**Docker**), real-time systems (**WebSockets**), observability (**Prometheus**) and both SQL and NoSQL databases.
 
