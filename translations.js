@@ -113,7 +113,7 @@ window.TRANSLATIONS = {
             'Implementação de testes com <strong>Jest</strong>, integrações de geolocalização com <strong>Google Maps React</strong>',
             'Gerenciamento de estado com <strong>TanStack Query</strong> e <strong>Shadcn/UI</strong>/<strong>TailwindCSS</strong>',
             'Comunicação em tempo real (<strong>WebSockets</strong>), monitoramento com <strong>Prometheus</strong>',
-            'Otimização com <strong>NoSQL (Firebase)</strong> e orquestração de containers com <strong>Docker</strong> e <strong>Kubernetes</strong> em <strong>GCP</strong>',
+            'Otimização com <strong>NoSQL (Firebase)</strong> e orquestração de containers com <strong>Docker</strong> e <strong>Kubernetes</strong>',
           ],
         },
      },
@@ -300,7 +300,7 @@ window.TRANSLATIONS = {
        },
 
        job3: {
-         role:    'Full-Stack Developer Mid-Level',
+         role:    'Mid-Level Full-Stack Developer',
          company: 'ODEEN',
          period:  'Jun 2025 – Present',
          location: 'Mogi das Cruzes, SP, Brazil',
@@ -310,7 +310,7 @@ window.TRANSLATIONS = {
            'Implementation of tests with <strong>Jest</strong>, geolocation integrations with <strong>Google Maps React</strong>',
            'State management with <strong>TanStack Query</strong> and <strong>Shadcn/UI</strong>/<strong>TailwindCSS</strong>',
            'Real-Time communication (<strong>WebSockets</strong>), monitoring with <strong>Prometheus</strong>',
-           'Optimization with <strong>NoSQL (Firebase)</strong> and container orchestration with <strong>Docker</strong> and <strong>Kubernetes</strong> on <strong>GCP</strong>',
+           'Optimization with <strong>NoSQL (Firebase)</strong> and container orchestration with <strong>Docker</strong> and <strong>Kubernetes</strong>',
          ],
        },
      },
