@@ -43,7 +43,7 @@ window.TRANSLATIONS = {
     hero: {
       greeting: 'Olá, eu sou',
       aiBadgeText: 'Desenvolvedor Potencializado por IA',
-      lead: 'Desenvolvedor Full-Stack Pleno com <strong>2+ anos</strong> de experiência em <span class="text-accent">Next.js</span>, <span class="text-accent">React</span>, <span class="text-accent">Java Spring Boot</span>, <span class="text-accent">Go</span> e <span class="text-accent">Node.js</span>. Construindo soluções escaláveis de ponta a ponta — <span class="text-ai"><strong>amplificadas por IA</strong></span>.',
+      lead: 'Desenvolvedor Full-Stack Pleno com <strong>3+ anos</strong> de experiência em <span class="text-accent">Next.js</span>, <span class="text-accent">React</span>, <span class="text-accent">Java Spring Boot</span>, <span class="text-accent">Go</span> e <span class="text-accent">Node.js</span>. Construindo soluções escaláveis de ponta a ponta — <span class="text-ai"><strong>amplificadas por IA</strong></span>.',
       ctaPortfolio: 'Ver Portfólio',
       ctaContact:   'Entrar em Contato',
       scroll: 'scroll',
@@ -70,70 +70,53 @@ window.TRANSLATIONS = {
       languageValue: 'Leitura e escrita — nível profissional',
     },
 
-    // Experience
-    experience: {
-      sectionTitle: 'Experiência Profissional',
+     // Experience
+     experience: {
+       sectionTitle: 'Experiência Profissional',
 
-      job1: {
-        role:    'Desenvolvedor Full-Stack Pleno',
-        company: 'ODEEN',
-        companyNote: '(Anteriormente SWINT)',
-        period:  'Jun 2025 – Atual',
-        badge:   'Atual',
-        location: 'Mogi das Cruzes, SP, Brasil',
-        bullets: [
-          'Manutenção e evolução de microsserviço em <strong>Go</strong>, com foco em performance e escalabilidade.',
-          'Implementação de testes unitários utilizando <strong>Jest</strong> para garantir a qualidade do código.',
-        ],
-      },
+        job1: {
+          role:    'Programador Júnior',
+          company: 'ODEEN',
+          companyNote: '(Anteriormente SWINT)',
+          period:  'Jun 2023 – Mai 2024',
+          location: 'Mogi das Cruzes, SP, Brasil',
+          bullets: [
+            'Implementação de melhorias de interface e manutenção de páginas em <strong>React</strong>/<strong>Typescript</strong>',
+            'Criação de interfaces otimizadas para performance utilizando <strong>Web Workers</strong>',
+            'Construção de APIs RESTful com <strong>NodeJS</strong>/<strong>Express</strong> integradas com <strong>MySQL</strong>',
+          ],
+        },
 
-      job2: {
-        role:    'Desenvolvedor Back-end Sênior',
-        company: 'ODEEN',
-        period:  'Dez 2024 – Mai 2025',
-        location: 'Mogi das Cruzes, SP, Brasil',
-        bullets: [
-          'Processamento de dados geoespaciais com <strong>Turf.js</strong> em Node.js para funcionalidades de geoposicionamento.',
-          'Implementação de monitoramento e métricas em serviços <strong>Java Spring Boot</strong> com <strong>Prometheus</strong>.',
-          'Adoção de banco de dados NoSQL (<strong>Firebase</strong>) para otimizar o desempenho em funcionalidades específicas.',
-        ],
-      },
+        job2: {
+          role:    'Desenvolvedor Back-end',
+          company: 'ODEEN',
+          period:  'Jun 2024 – Mai 2025',
+          location: 'Mogi das Cruzes, SP, Brasil',
+          bullets: [
+            'Arquitetura de microsserviços e implementação (<strong>Python</strong>, <strong>Node</strong>, <strong>Java</strong>) em <strong>GCP</strong>',
+            'Desenvolvimento de comunicação em tempo real (<strong>WebSockets</strong>)',
+            'Otimização de containers <strong>Docker</strong> e roteamento com <strong>HAProxy</strong>',
+            'Implementação de geolocalização com <strong>NodeJS</strong>/<strong>TurfJS</strong>',
+            'Monitoramento de serviços <strong>Spring Boot</strong> via <strong>Prometheus</strong>',
+            'Migração para <strong>NoSQL (Firebase)</strong>',
+          ],
+        },
 
-      job3: {
-        role:    'Desenvolvedor Back-end Pleno',
-        company: 'ODEEN',
-        period:  'Jun 2024 – Nov 2024',
-        location: 'Mogi das Cruzes, SP, Brasil',
-        bullets: [
-          'Desenvolvimento de novos microsserviços usando <strong>Python</strong>, <strong>Node.js</strong> e <strong>Java Spring Boot</strong> desde a arquitetura até o deploy na <strong>GCP</strong>.',
-          'Transmissão de dados em tempo real utilizando <strong>WebSockets</strong>.',
-          'Otimização de imagens <strong>Docker</strong> reduzindo tamanho e tempo de build.',
-          'Integração de Proxy Reverso <strong>HAProxy</strong> para roteamento de tráfego.',
-        ],
-      },
-
-      job4: {
-        role:    'Programador Júnior',
-        company: 'ODEEN',
-        period:  'Out 2023 – Mai 2024',
-        location: 'Mogi das Cruzes, SP, Brasil',
-        bullets: [
-          'Criação de páginas e componentes customizados em <strong>React</strong>, focando em performance e UX.',
-          'Utilização de <strong>Web Workers</strong> para processamento de documentos de maneira assíncrona.',
-          'Construção de APIs com <strong>Node.js</strong> e Express, integrando com bancos <strong>MySQL</strong>.',
-        ],
-      },
-
-      job5: {
-        role:    'Assistente de TI Júnior',
-        company: 'ODEEN',
-        period:  'Jun 2023 – Set 2023',
-        location: 'Mogi das Cruzes, SP, Brasil',
-        bullets: [
-          'Implementação de páginas e melhorias de interface em aplicações existentes usando <strong>React</strong> e <strong>TypeScript</strong>.',
-        ],
-      },
-    },
+        job3: {
+          role:    'Desenvolvedor Full-Stack Pleno',
+          company: 'ODEEN',
+          period:  'Jun 2025 – Presente',
+          location: 'Mogi das Cruzes, SP, Brasil',
+          badge:   'Atual',
+          bullets: [
+            'Desenvolvimento de microsserviços em <strong>Go</strong> e arquitetura de APIs com <strong>NestJS</strong>',
+            'Implementação de testes com <strong>Jest</strong>, integrações de geolocalização com <strong>Google Maps React</strong>',
+            'Gerenciamento de estado com <strong>TanStack Query</strong> e <strong>Shadcn/UI</strong>/<strong>TailwindCSS</strong>',
+            'Comunicação em tempo real (<strong>WebSockets</strong>), monitoramento com <strong>Prometheus</strong>',
+            'Otimização com <strong>NoSQL (Firebase)</strong> e orquestração de containers com <strong>Docker</strong> e <strong>Kubernetes</strong> em <strong>GCP</strong>',
+          ],
+        },
+     },
 
     // Skills
     skills: {
@@ -259,7 +242,7 @@ window.TRANSLATIONS = {
     hero: {
       greeting: 'Hi, I\'m',
       aiBadgeText: 'AI-Augmented Developer',
-      lead: 'Mid-Level Full-Stack Developer with <strong>2+ years</strong> of experience in <span class="text-accent">Next.js</span>, <span class="text-accent">React</span>, <span class="text-accent">Java Spring Boot</span>, <span class="text-accent">Go</span> and <span class="text-accent">Node.js</span>. Building scalable end-to-end solutions — <span class="text-ai"><strong>amplified by AI</strong></span>.',
+      lead: 'Mid-Level Full-Stack Developer with <strong>3+ years</strong> of experience in <span class="text-accent">Next.js</span>, <span class="text-accent">React</span>, <span class="text-accent">Java Spring Boot</span>, <span class="text-accent">Go</span> and <span class="text-accent">Node.js</span>. Building scalable end-to-end solutions — <span class="text-ai"><strong>amplified by AI</strong></span>.',
       ctaPortfolio: 'View Portfolio',
       ctaContact:   'Get in Touch',
       scroll: 'scroll',
@@ -285,69 +268,52 @@ window.TRANSLATIONS = {
       languageValue: 'Reading & writing — professional level',
     },
 
-    experience: {
-      sectionTitle: 'Professional Experience',
+     experience: {
+       sectionTitle: 'Professional Experience',
 
-      job1: {
-        role:    'Mid-Level Full-Stack Developer',
-        company: 'ODEEN',
-        companyNote: '(Formerly SWINT)',
-        period:  'Jun 2025 – Present',
-        badge:   'Current',
-        location: 'Mogi das Cruzes, SP, Brazil',
-        bullets: [
-          'Maintenance and evolution of a microservice in <strong>Go</strong>, focusing on performance and scalability.',
-          'Implementation of unit tests using <strong>Jest</strong> to ensure code quality.',
-        ],
-      },
+       job1: {
+         role:    'Junior Developer',
+         company: 'ODEEN',
+         companyNote: '(Formerly SWINT)',
+         period:  'Jun 2023 – May 2024',
+         location: 'Mogi das Cruzes, SP, Brazil',
+         bullets: [
+           'Implementation of interface improvements and maintenance of <strong>React</strong>/<strong>Typescript</strong> pages',
+           'Creation of performance-optimized interfaces using <strong>Web Workers</strong>',
+           'Construction of RESTful APIs with <strong>NodeJS</strong>/<strong>Express</strong> integrated with <strong>MySQL</strong>',
+         ],
+       },
 
-      job2: {
-        role:    'Senior Back-end Developer',
-        company: 'ODEEN',
-        period:  'Dec 2024 – May 2025',
-        location: 'Mogi das Cruzes, SP, Brazil',
-        bullets: [
-          'Geospatial data processing with <strong>Turf.js</strong> in Node.js for geo-positioning features.',
-          'Implementation of monitoring and metrics in <strong>Java Spring Boot</strong> services using <strong>Prometheus</strong>.',
-          'Adoption of a NoSQL database (<strong>Firebase</strong>) to improve performance in specific features.',
-        ],
-      },
+       job2: {
+         role:    'Back-End Developer',
+         company: 'ODEEN',
+         period:  'Jun 2024 – May 2025',
+         location: 'Mogi das Cruzes, SP, Brazil',
+         bullets: [
+           'Microservices architecture and implementation (<strong>Python</strong>, <strong>Node</strong>, <strong>Java</strong>) on <strong>GCP</strong>',
+           'Development of Real-Time communication (<strong>WebSockets</strong>)',
+           'Optimization of <strong>Docker</strong> containers and <strong>HAProxy</strong> routing',
+           'Implementation of geolocation with <strong>NodeJS</strong>/<strong>TurfJS</strong>',
+           'Monitoring of <strong>Spring Boot</strong> services via <strong>Prometheus</strong>',
+           'Migration to <strong>NoSQL (Firebase)</strong>',
+         ],
+       },
 
-      job3: {
-        role:    'Mid-Level Back-end Developer',
-        company: 'ODEEN',
-        period:  'Jun 2024 – Nov 2024',
-        location: 'Mogi das Cruzes, SP, Brazil',
-        bullets: [
-          'Built new microservices using <strong>Python</strong>, <strong>Node.js</strong> and <strong>Java Spring Boot</strong> from architecture to deployment on <strong>GCP</strong>.',
-          'Real-time data streaming using <strong>WebSockets</strong>.',
-          'Optimised <strong>Docker</strong> images, reducing size and build time.',
-          'Integrated <strong>HAProxy</strong> reverse proxy for traffic routing.',
-        ],
-      },
-
-      job4: {
-        role:    'Junior Developer',
-        company: 'ODEEN',
-        period:  'Oct 2023 – May 2024',
-        location: 'Mogi das Cruzes, SP, Brazil',
-        bullets: [
-          'Built custom pages and components in <strong>React</strong>, focusing on performance and UX.',
-          'Used <strong>Web Workers</strong> for asynchronous document processing.',
-          'Built APIs with <strong>Node.js</strong> and Express, integrated with <strong>MySQL</strong> databases.',
-        ],
-      },
-
-      job5: {
-        role:    'Junior IT Assistant',
-        company: 'ODEEN',
-        period:  'Jun 2023 – Sep 2023',
-        location: 'Mogi das Cruzes, SP, Brazil',
-        bullets: [
-          'Implemented pages and UI improvements in existing applications using <strong>React</strong> and <strong>TypeScript</strong>.',
-        ],
-      },
-    },
+       job3: {
+         role:    'Full-Stack Developer Mid-Level',
+         company: 'ODEEN',
+         period:  'Jun 2025 – Present',
+         location: 'Mogi das Cruzes, SP, Brazil',
+         badge:   'Current',
+         bullets: [
+           'Development of microservices in <strong>Go</strong> and API architecture with <strong>NestJS</strong>',
+           'Implementation of tests with <strong>Jest</strong>, geolocation integrations with <strong>Google Maps React</strong>',
+           'State management with <strong>TanStack Query</strong> and <strong>Shadcn/UI</strong>/<strong>TailwindCSS</strong>',
+           'Real-Time communication (<strong>WebSockets</strong>), monitoring with <strong>Prometheus</strong>',
+           'Optimization with <strong>NoSQL (Firebase)</strong> and container orchestration with <strong>Docker</strong> and <strong>Kubernetes</strong> on <strong>GCP</strong>',
+         ],
+       },
+     },
 
     skills: {
       sectionTitle: 'Technical Skills',
